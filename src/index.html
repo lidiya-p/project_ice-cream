@@ -8,6 +8,104 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
+        <header>
+      <div class="container">
+        <div class="container__header">
+      <a class="header__logo link" href="" >
+        <svg class="header__logo__svg" width="199" height="50">
+          <use href="./svg/symbol-defs.svg#icon-logo"></use></svg
+      ></a>
+      <nav>
+      <ul class="header__nav__list list">
+        <li><a class="header__nav__link link" href="">Home</a></li>
+        <li><a class="header__nav__link link" href="">Abont us</a></li>
+        <li><a class="header__nav__link link" href="">How it’s made?</a></li>
+        <li><a class="header__nav__link link" href="">Our products</a></li>
+        <li><a class="header__nav__link link" href="">Contact</a></li>
+      </ul >
+      </nav>
+      <button
+            type="button"
+            class="menu__button menu__button--open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="35" height="35">
+              <use href="./svg/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+      <button class="button__open-modal button__open-modal--none" type="button">Buy now</button>
+      </div>
+      <h1 class="header__title">ice cream made with <span class="header__title--color">passion</span></h1>
+      <ul class="button__list list">
+        <li class="button__item"><button class="button primary-button" type="button">Products</button></li>
+        <li class="button__item"><button class="button secondary-button" type="button">How it’s made?</button></li>
+      </ul>
+      <div class="header__container__img--flex">
+        <img
+          srcset="./image/milk.png 1x, ./image/milk.png 2x"
+          src="./image/milk.png"
+          alt="milk"
+          class="header__img__milk"
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button type="button">   <svg class="header__logo__svg" width="199" height="50">
+          <use href="./svg/arrow-right.svg"></use></svg</button>
+      </div>
+      <img
+        srcset="./image/icecream.png 1x, ./image/icecream.png 2x"
+        src="./image/icecream.png"
+        alt="icecream"
+        class="header__img__icecram"
+      />
+      <ul class="header__list__institution list">
+        <li class="header__item__institution">16</li>
+        <li class="header__item__institution--color">cafes</li>
+      </ul>
+      <ul class="header__list__institution list">
+        <li class="header__item__institution">23</li>
+        <li class="header__item__institution--color">food trucks</li>
+      </ul>
+      <img
+        srcset="./image/girl.png 1x, ./image/girl.png 2x"
+        src="./image/girl.png"
+        alt="girl"
+        class="header__img__girl "
+      />
+      </div>
+    </header>
+        <div class="menu js-menu-container" id="mobile-menu">
+      <button
+        type="button"
+        class="menu__button menu__button--close js-close-menu"
+      >
+        <svg width="35" height="35">
+          <use href="./svg/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button class="button__open-modal button__open-modal--margin" type="button">Buy now</button>
+         <nav>
+      <ul class="menu__nav__list menu__nav__list-modal list">
+        <li class="menu__nav__item"><a class="header__nav__link link" href="">Home</a></li>
+        <li class="menu__nav__item"><a class="header__nav__link link" href="">Abont us</a></li>
+        <li class="menu__nav__item"><a class="header__nav__link link" href="">How it’s made?</a></li>
+        <li class="menu__nav__item"><a class="header__nav__link link" href="">Our products</a></li>
+        <li class="menu__nav__item"><a class="header__nav__link link" href="">Contact</a></li>
+      </ul >
+      </nav>
+
+  
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <!-- <include src="./partials/example.html"></include> -->
   </body>
