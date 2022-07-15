@@ -1,4 +1,10 @@
 .hero {
+
+  height: 436px;
+  position: relative;
+
+=======
+  background-color: $accent-background-color;
   height: 436px;
   position: relative;
 
@@ -14,7 +20,9 @@
 }
 
 .hero__title {
+
     font-family: 'Titan One';
+
   // margin-top: 134px;
   width: 218px;
   font-size: 26px;
@@ -26,8 +34,9 @@
 }
 .hero__title--color {
   color: $primary-accent-text-color;
+
   font-size: 46px;
-}
+
 
 .hero__button__list {
   display: inline-flex;
@@ -39,11 +48,7 @@
   }
 }
 
-/////////////////////////////////////BUTTON
-/// /////////////////////////////////////BUTTON
-/// /////////////////////////////////////BUTTON
-/// /////////////////////////////////////BUTTON
-/// /////////////////////////////////////BUTTON
+
 .hero__button {
   border: none;
   font-size: 8px;
@@ -87,6 +92,7 @@
   z-index: 1;
 }
 .hero__ellipse {
+
     margin: 0;
     padding: 0;
   position: absolute;
@@ -94,12 +100,24 @@
   top: 17px;
   // right: 43px;
 //   clip-path: ellipse(346px 344px);
+
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 6px;
+  top: 17px;
+
+
   border-radius: 50%;
   background-color: #fff;
   width: 346px;
   height: 344px;
   background-color: $secondary-accent-text-color;
+
   // background-image: url(/svg/arrow.svg);
   background-size: contain;
 //   margin-left: 10px;
+=======
+  background-size: contain;
+
 }

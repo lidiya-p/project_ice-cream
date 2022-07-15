@@ -52,7 +52,9 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 20px;
+
   overflow: hidden;
+
 }
 @media screen and (min-width: 320px) {
   .container {
@@ -106,6 +108,10 @@ p {
 }
 
 .hero {
+
+=======
+  background-color: #FFB8CA;
+
   height: 436px;
   position: relative;
 }
@@ -118,7 +124,9 @@ p {
 }
 
 .hero__title {
+
   font-family: "Titan One";
+
   width: 218px;
   font-size: 26px;
   line-height: 1.15;
@@ -129,7 +137,10 @@ p {
 
 .hero__title--color {
   color: #D41443;
+
   font-size: 46px;
+
+
 }
 
 .hero__button__list {
