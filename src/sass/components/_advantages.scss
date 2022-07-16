@@ -64,6 +64,16 @@
   background-image: url(../images/mobile/advantages-icon-milk.png);
   background-size: contain;
   background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/advantages-icon-milk--2x.png);
+  }
+  @media (min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+    background-image: url(../images/mobile/advantages-icon-milk--3x.png);
+  }
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
   }
@@ -81,6 +91,16 @@
   background-image: url(../images/mobile/advantages-icon-apples.png);
   background-size: contain;
   background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/advantages-icon-apples--2x.png);
+  }
+  @media (min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+    background-image: url(../images/mobile/advantages-icon-apples--3x.png);
+  }
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
   }
@@ -98,6 +118,16 @@
   background-image: url(../images/mobile/advantages-icon-sweets.png);
   background-size: contain;
   background-repeat: no-repeat;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/advantages-icon-sweets--2x.png);
+  }
+  @media (min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+    background-image: url(../images/mobile/advantages-icon-sweets--3x.png);
+  }
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
   }
