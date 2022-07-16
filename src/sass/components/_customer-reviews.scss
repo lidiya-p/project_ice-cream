@@ -8,13 +8,10 @@
 }
 
 .swiper-slide {
-  
   overflow: hidden;
-  
 }
 
 .swiper-wrapper {
-  position: relative;
   margin: 0 auto;
   width: 100%;
 }
@@ -25,17 +22,20 @@
 
   font-weight: 500;
   font-size: 12px;
-  line-height: 2.55;
+  line-height: 2.5;
   color: $title-text-color;
+  z-index: 2;
   background-image: repeating-linear-gradient(
-    180deg,
+    to bottom,
     transparent,
     transparent 29px,
+    #e1e1e1 29px,
     #e1e1e1 30px
   );
 }
 
 .slider-thumb {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +49,18 @@
   padding-left: 50px;
 
   background-color: #fafafa;
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 54px;
+    height: 40px;
+    top: 30px;
+    left: 53px;
+    z-index: 1;
+    background-image: url(/src/images/svg/customer-quotes.svg);
+  }
 }
 
 .swiper-pagination-bullet {
@@ -77,16 +89,16 @@
   font-size: 14px;
   line-height: 1.9;
   color: $title-text-color;
-}
 
-.slider-location::before {
-  content: '';
-  display: block;
-  text-align: center;
-  margin: 0 auto 16px;
-  width: 32px;
-  height: 4px;
-  background-image: url(/src/images/svg/slider-dots.svg);
+  &::before {
+    content: '';
+    display: block;
+    text-align: center;
+    margin: 0 auto 16px;
+    width: 32px;
+    height: 4px;
+    background-image: url(/src/images/svg/slider-dots.svg);
+  }
 }
 
 .slider-photo {
