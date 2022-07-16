@@ -1,0 +1,17 @@
+.section-gallery {
+    padding-top: 0;
+}
+
+.container-gallery {
+    padding: 0;
+    background-image: linear-gradient(to bottom,
+                $secondary-background-color 19%,
+                $primary-background-color 19%,
+                $primary-background-color 81%,
+                $primary-background-color 81%);
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 93px;
+        padding-right: 94px;
+    }
+}
