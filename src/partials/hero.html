@@ -1,60 +1,78 @@
 <section class="hero">
   <div class="container--absolute">
     <div class="container">
-    <div class="hero__container__title">
-      <h1 class="hero__title">
-        ice cream made with <span class="hero__title--color">passion</span>
-      </h1>
-      <ul class="hero__button__list list">
-        <li class="hero__button__item">
-          <button class="hero__button hero__primary-button" type="button">
-            Products
-          </button>
-        </li>
-        <li class="hero__button__item">
-          <button class="hero__button hero__secondary-button" type="button">
-            How it’s made?
-          </button>
-        </li>
-      </ul>
-    </div>
-    <div class="hero__container__img">
-      
-        <img class="hero__img__milk" src="./images/desktop/hero-milk--1x.png" alt="milk">
-      <p class="hero__text__milk">
-       
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p>
-      <button class="hero__milk__button" type="button"></button>
-      
-    </div>
+      <div class="hero__container__title">
+        <h1 class="hero__title">
+          ice cream made with <span class="hero__title--color">passion</span>
+        </h1>
+        <ul class="hero__button__list list">
+          <li class="hero__button__item">
+            <button class="hero__button hero__primary-button" type="button">
+              Products
+            </button>
+          </li>
+          <li class="hero__button__item">
+            <button class="hero__button hero__secondary-button" type="button">
+              How it’s made?
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="hero__container__img">
+        <img
+          class="hero__img__milk"
+           srcset="
+          ./images/desktop/hero-milk--1x.png 1x,
+          ./images/desktop/hero-milk--2x.png 2x,
+          ./images/desktop/hero-milk--3x.png 3x
+        "
+          src="./images/desktop/hero-milk--1x.png"
+          alt="milk"
+        />
+        <p class="hero__text__milk">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button class="hero__milk__button" type="button">
+            <svg class="hero__milk__button__svg" width="6" height="6">
+            <use href="./images/svg/icommon.svg#icon-arrow-right2"></use>
+          </svg>
+        </button>
+      </div>
 
-    <img
-      class="hero__img__icecram"
-   
-      width="171"
-      src="./images/desktop/hero-icecream--1x.png"
-      alt="icecream"
-    />
-    <samp class="hero__ellipse"></samp>
-    <div class="hero__container__institution">
-    <ul class="hero__list__institution list">
-      <li class="hero__item__institution">16</li>
-         <li class="hero__item__Ellipse-first"></li>
-      <li class="hero__item__institution--color">cafes</li>
-       <li class="hero__item__institution">23</li>
+      <img
+        class="hero__img__icecram"
+        srcset="
+          ./images/desktop/hero-icecream--1x.png 1x,
+          ./images/desktop/hero-icecream--2x.png 2x,
+          ./images/desktop/hero-icecream--3x.png 3x
+        "
+        width="171"
+        src="./images/desktop/hero-icecream--1x.png"
+        alt="icecream"
+      />
+      <samp class="hero__ellipse"></samp>
+      <div class="hero__container__institution">
+        <ul class="hero__list__institution list">
+          <li class="hero__item__institution">16</li>
+          <li class="hero__item__Ellipse-first"></li>
+          <li class="hero__item__institution--color">cafes</li>
+          <li class="hero__item__institution">23</li>
           <li class="hero__item__Ellipse-second"></li>
-      <li class="hero__item__institution--color">food trucks</li>
-    </ul>
-    </div>
-    
-    <img
-   
-      src="./images/desktop/hero-girl--1x.png"
-      alt="girl"
-      class="hero__img__girl"
-    />
+          <li class="hero__item__institution--color">food trucks</li>
+        </ul>
+      </div>
+
+      <img
+       srcset="
+          ./images/desktop/hero-girl--1x.png 1x,
+          ./images/desktop/hero-girl--2x.png 2x,
+          ./images/desktop/hero-girl--3x.png 3x
+        "
+        src="./images/desktop/hero-girl--1x.png"
+        alt="girl"
+        class="hero__img__girl"
+      />
     </div>
   </div>
 </section>
