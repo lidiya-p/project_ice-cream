@@ -1,0 +1,75 @@
+<header class="header">
+  <div class="container nav">
+    <a href="./index.html" class="logo">
+      <svg width="200" height="50">
+        <use class="icon-logo" href="./images/svg/icommon.svg#icon-logo"></use>
+      </svg>
+    </a>
+
+    <button
+      type="button"
+      class="menu-button"
+      aria-controls="menu-container"
+      aria-expanded="false"
+      data-menu-open
+    >
+      <svg width="20" height="12" aria-label="Переключатель мобильного меню">
+        <use
+          class="icon-menu"
+          href="./images/svg/icommon.svg#icon-burger-button"
+        ></use>
+      </svg>
+    </button>
+
+    <div class="menu-container" id="menu-container" data-menu>
+      <div class="menu">
+        <button
+          type="button"
+          class="menu__close-button"
+          aria-controls="menu-container"
+          aria-expanded="false"
+          data-menu-close
+        >
+          <svg
+            class="icon-cross"
+            width="14"
+            height="14"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use href="./images/svg/icommon.svg#icon-close-button"></use>
+          </svg>
+        </button>
+        <button type="button" class="modal-button">
+          Buy now
+          <svg class="button-icon" width="4" height="8">
+            <use href="./images/svg/icommon.svg#icon-button-icon"></use>
+          </svg>
+        </button>
+        <nav class="nav__main-nav">
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="" class="link site-nav__link site-nav__link--curent"
+                >Home</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="link site-nav__link">About us</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="link site-nav__link">How it’s made?</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="link site-nav__link">Our products</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="" class="link site-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
