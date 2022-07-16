@@ -1,0 +1,117 @@
+.customer-reviews-title {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  padding: 0;
+  margin: 0;
+  height: 0;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  min-width: 0;
+  margin-bottom: 45px;
+}
+
+.slider-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 280px;
+  width: 100%;
+  padding-top: 43px;
+  padding-bottom: 17px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-bottom: 16px;
+  position: relative;
+
+  background-color: #fafafa;
+
+  @media screen and (min-width: 768px) {
+    max-width: 620px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 968px;
+  }
+}
+
+.slider-text {
+  margin: 0;
+  text-align: center;
+  color: $title-text-color;
+  width: 157px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.5;
+  z-index: 1;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 29px,
+    #e1e1e1 29px,
+    #e1e1e1 30px
+  );
+
+  &::after {
+    content: '';
+    display: block;
+    width: 54px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 53px;
+    z-index: -1;
+    background-image: url(/src/images/svg/slider-quotes.svg);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 514px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 822px;
+  }
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  color: #d9d9d9;
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url(/src/images/svg/slider-home.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+}
+
+.slider-location {
+  text-align: center;
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  color: $title-text-color;
+
+  &::before {
+    content: '';
+    display: block;
+    text-align: center;
+    margin: 0 auto 16px;
+    width: 32px;
+    height: 4px;
+    background-image: url(/src/images/svg/slider-bullets.svg);
+  }
+}
+
+.slider-photo {
+  width: 85px;
+  margin-bottom: 32px;
+}
