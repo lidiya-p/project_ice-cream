@@ -1,0 +1,218 @@
+.contacts-title {
+    visibility: hidden;
+    font-size: 0;
+}
+
+.contacts {
+    padding: 0 0 40px 0;
+    margin: 0 auto;
+
+    background-color: $primary-background-color;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (max-width: 767px) {
+        background: linear-gradient(to top, $secondary-background-color 77%, $primary-background-color 23%);
+    }
+
+}
+
+.contacts__item-title {
+    background: #F0D1A5;
+    color: $secondary-text-color;
+    text-transform: uppercase;
+
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+
+
+    padding: 0 24px;
+    margin-bottom: 20px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+
+
+
+}
+
+.contacts__list {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+
+    font-weight: 500;
+    margin-bottom: 32px;
+
+}
+
+.contacts__item {
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 40px 32px;
+
+    font-size: 12px;
+    line-height: 1.9;
+    background: $primary-background-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    &--black {
+        color: $title-text-color;
+    }
+
+    &--grey {
+        color: $primary-text-color;
+        line-height: 1.5;
+    }
+
+    &--purple {
+        color: $secondary-accent-text-color;
+    }
+
+    &:nth-child(2n) {
+        .contacts__item-title {
+            background: #C2E297;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &--grey {
+        line-height: 1.5;
+    }
+
+    .contacts__link {
+        line-height: 1.5;
+        text-decoration: none;
+
+    }
+
+
+
+}
+
+.contacts__item-header {
+    li:first-child {
+        margin-bottom: 8px;
+    }
+}
+
+.contacts__item-header::after,
+.contacts__item-body::after {
+    display: block;
+    width: 100%;
+    margin: 24px 0;
+    content: '';
+    border-bottom: 1px solid #E1E1E1;
+
+}
+
+.contacts__item-body {
+    li:nth-child(2n) {
+        margin-bottom: 8px;
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contacts__link {
+    &--grey {
+        color: $primary-text-color;
+    }
+}
+
+.contacts__modal-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacts__button.btn {
+
+    &-purple,
+    &-white {
+        font-size: 16px;
+        display: block;
+        justify-content: center;
+        border-radius: 22px;
+        width: 161px;
+        padding: 0 17px;
+        height: 44px;
+        margin: 0 auto;
+        border-color: transparent;
+    }
+
+}
+
+.contacts__modal-item {
+    &:first-child {
+        margin-bottom: 10px;
+    }
+}
+
+.btn-white {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    background-color: $secondary-background-color;
+    border: 0;
+    color: $primary-accent-text-color;
+
+    cursor: pointer;
+
+    transition-property: background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.btn-purple {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    background-color: $primary-accent-text-color;
+    border: 0;
+    color: $secondary-text-color;
+    fill: $secondary-text-color;
+
+    cursor: pointer;
+
+    transition-property: background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #ff3769;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.contacts__arrow {
+    margin-left: 14px;
+
+}
+
+.contacts__arrow-white {
+    margin-left: 8px;  
+}
