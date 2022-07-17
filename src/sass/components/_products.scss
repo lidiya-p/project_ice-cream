@@ -96,7 +96,7 @@ background-image: url(/src/images/mobile/products-icecoffe--1x.png);
   
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(/src/images/svg/slider-home.svg);
+    background-image: url(/src/images/svg/Group\ 4.svg);
    
 }
 
@@ -167,31 +167,30 @@ background-color: #C2E297;
     
 }
 
+// .products__button:hover,
+// .products__button:focus{
+//  background-color: black;
+
+// }
+
 .products__button {
     margin-right: 120px;
     margin-left: 120px;
     border-radius: 50%;
+    border: none;
+    &:hover,
+&:focus{
+ background-color: black;
 
+}
 }
 
 
+.products__icon {
+    padding: 10px;
+   fill: #D41443;
+ 
 
-
-
-/* .button__icon {
-    margin-right: 120px;
-    margin-left: 120px;
-    border-radius: 50%;
-    outline: 1px solid tomato;
-} */
-
-// .product__icon {
-//     margin-right: 120px;
-//     margin-left: 120px;
-//     border-radius: 50%;
-    
-//     outline: 1px solid tomato;
-
-// }
+}
 
 
