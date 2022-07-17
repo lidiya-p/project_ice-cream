@@ -56,20 +56,18 @@ color: #FFFFFF;
     height: 6px;
 }
 
+
 .products__image {
     top: 10px;
+    width: 280px;
     height: 280px;
     position: absolute; 
     background-repeat: no-repeat;
     background-position: center;
-    
-  
-    
+
+    background-image: url(/src/images/mobile/products-icecream--1x.png);
 }
 
-.products__image--icecream {
-background-image: url(/src/images/mobile/products-icecream--1x.png);
-}
 
 .products__image--icecofee {
 background-image: url(/src/images/mobile/products-icecoffe--1x.png);
@@ -96,7 +94,7 @@ background-image: url(/src/images/mobile/products-icecoffe--1x.png);
   
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(/src/images/svg/Group\ 4.svg);
+    background-image: url(/src/images/svg/group-4.svg);
    
 }
 
@@ -180,8 +178,7 @@ background-color: #C2E297;
     border: none;
     &:hover,
 &:focus{
- background-color: black;
-
+ background-color: #E18298;
 }
 }
 
