@@ -6,7 +6,9 @@
   margin: 0;
   height: 0;
 }
-
+.section-slider {
+  padding-top: 0;
+}
 .swiper-slide {
   display: flex;
   flex-direction: column;
@@ -70,6 +72,12 @@
     background-image: url(/src/images/svg/slider-quotes.svg);
   }
 
+  &::after {
+    @media screen and (min-width:768px){
+      top: 20px;
+      left: 6px;
+    }
+  }
   @media screen and (min-width: 768px) {
     width: 514px;
   }
