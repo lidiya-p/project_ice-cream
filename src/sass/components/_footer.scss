@@ -1,8 +1,7 @@
 .footer__container {
     width: 100%;
     background-color: #FFF5F6;
-
-}
+}   
 
 .footer__header {
     font-family: 'Titan One';
@@ -14,8 +13,8 @@
 
     color: #FFA5BA;
 
-    padding-left: 22px;
-    padding-top: 40px;
+    // padding-left: 22px;
+    // padding-top: 40px;
     width: 232px;
 
 }
@@ -42,7 +41,7 @@
 
 .footer__link {
     text-decoration: none;
-    margin-right: 28px;
+    // margin-right: 28px;
 
     display: flex;
     align-items: center;
@@ -71,6 +70,11 @@
 
 .footer__item {
     list-style: none;
+
+    &:not(:last-child) {
+        margin-right: 28px;
+    }
+
 }
 
 .footer__nav-text {
@@ -81,7 +85,7 @@
     line-height: 186%;
     text-align: right;
 
-    padding-right: 20px;
+    // padding-right: 20px;
 
     color: #000000;
 }
