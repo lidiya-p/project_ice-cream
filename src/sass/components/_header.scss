@@ -1,7 +1,7 @@
 .header {
   background-color: $accent-background-color;
 
-  //   position: relative;
+    position: relative;
   //   transform: translate(-50%, 0%);
   //   left: 50%;
   //   top: 0%;
@@ -38,7 +38,7 @@
 .menu-button {
   //   position: fixed;
   //   top: 27px;
-  right: 20px;
+  right: 20px;margin-right: 30px;
 
   display: block;
   width: 20px;

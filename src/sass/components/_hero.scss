@@ -190,7 +190,7 @@ line-height: 1.28;
   }
 }
 .hero__text__milk {
-  z-index: 5;
+  z-index: 3;
   position: absolute;
   margin-bottom: 7px;
   @media screen and (min-width: 768px) {
@@ -210,7 +210,6 @@ line-height: 1.28;
   color: $secondary-text-color;
 }
 .hero__milk__button {
-  
   cursor: pointer;
   background-color: $primary-background-color;
   display: flex;
@@ -436,3 +435,45 @@ justify-content: center;
 
   background-size: contain;
 }
+
+
+
+
+
+
+
+
+
+.arrow-scroll{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#myBtn {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9;
+  // font-size: 8px;
+  border: none;
+  outline: none;
+  fill: $primary-accent-text-color;
+  background-color: transparent;
+  // color: white;
+  cursor: pointer;
+  padding: 5px;
+  // border-radius: 20px;
+  transform: rotate(-90deg);
+}
+
+#myBtn:hover {
+  cursor: pointer;
+  fill: #ff3769;
+}
+

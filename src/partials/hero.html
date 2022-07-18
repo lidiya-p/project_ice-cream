@@ -1,24 +1,25 @@
 <section class="hero">
   <div class="container--absolute">
     <div class="container">
-      <div class="hero__container__title">
+      <div data-aos-easing="linear" data-aos-duration="2000" data-aos="fade-down-right"  class="hero__container__title">
         <h1 class="hero__title">
           ice cream made with <span class="hero__title--color">passion</span>
         </h1>
         <ul class="hero__button__list list">
           <li class="hero__button__item">
-            <a href="#products"><button class="hero__button hero__primary-button" type="button">
+            <a href="#products"><button  class="hero__button hero__primary-button" type="button">
               Products
             </button></a>
           </li>
           <li class="hero__button__item">
-            <button class="hero__button hero__secondary-button" type="button" data-modal-open>
+            <a href="#about">
+            <button  class="hero__button hero__secondary-button" type="button">
               How it’s made?
-            </button>
+            </button></a>
           </li>
         </ul>
       </div>
-      <div class="hero__container__img">
+      <div data-aos-easing="linear" data-aos-duration="2000" data-aos="fade-up-right"  class="hero__container__img">
         <img
           class="hero__img__milk"
            srcset="
@@ -52,7 +53,7 @@
         alt="icecream"
       />
       <samp class="hero__ellipse"></samp>
-      <div class="hero__container__institution">
+      <div data-aos-easing="linear" data-aos-duration="2000" data-aos="fade-down-left" class="hero__container__institution">
         <ul class="hero__list__institution list">
           <li class="hero__item__institution">16</li>
           <li class="hero__item__Ellipse-first"></li>
@@ -64,6 +65,9 @@
       </div>
 
       <img
+      data-aos-easing="linear"
+      data-aos-duration="2000"
+      data-aos="fade-up-left"
        srcset="
           ./images/desktop/hero-girl--1x.png 1x,
           ./images/desktop/hero-girl--2x.png 2x,
@@ -75,4 +79,10 @@
       />
     </div>
   </div>
+  <button data-aos-easing="linear"
+      data-aos-duration="3000"
+      data-aos="fade-up-left" onclick="topFunction()" id="myBtn" title="Go to top">  <svg class="arrow-scroll" width="36" height="26">
+            <use href="./images/svg/icommon.svg#icon-arrow-right2"></use>
+          </svg></button>
 </section>
+<script src="./js/skroll.js"></script>
