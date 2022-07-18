@@ -6,16 +6,9 @@ anime({
 });
 
 anime({
-  targets: '.hero__img__icecram',
+  targets: '.hero__ellipse',
   easing: 'easeInOutSine',
   scale: [1, 0.9],
   loop: true,
   direction: 'alternate',
-});
-
-
-anime({
-  targets: '.hero__title',
-  scaleX: [2, 1],
-  easing: 'easeInOutSine',
 });
