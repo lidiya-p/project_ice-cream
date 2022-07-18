@@ -1,7 +1,7 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
+    closeModalBtn: document.querySelector(".modal__close"),
     modal: document.querySelector("[data-modal]"),
   };
 
@@ -9,6 +9,6 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
+    refs.modal.classList.toggle('beckdrop__is-hidden');
   }
 })();
