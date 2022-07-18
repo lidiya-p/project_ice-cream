@@ -7,10 +7,10 @@ new Swiper('.swiper', {
     type: 'bullets',
     clickable: true,
   },
-  // autoplay: {
-  //   delay: 3000,
-  //   stopOnLastSlide: false,
-  //   disableOnInteraction: false,
-  //   pauseOnMouseEnter: true,
-  // },
+  autoplay: {
+    delay: 3000,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
 });

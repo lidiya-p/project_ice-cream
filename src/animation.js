@@ -7,13 +7,15 @@ anime({
 
 anime({
   targets: '.hero__img__icecram',
-  translateX: 50,
-  direction: 'alternate',
+  easing: 'easeInOutSine',
+  scale: [1, 0.9],
   loop: true,
-  easing: 'spring(2, 90, 10, 1)',
+  direction: 'alternate',
 });
+
 
 anime({
   targets: '.hero__title',
-  scale: [2, 1],
+  scaleX: [2, 1],
+  easing: 'easeInOutSine',
 });
