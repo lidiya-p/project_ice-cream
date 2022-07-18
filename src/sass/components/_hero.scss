@@ -2,7 +2,7 @@
   // height: 436px;
   // position: relative;
 
-  max-width: 1600px;
+  // max-width: 1600px;
 
 
   background-color: $accent-background-color;
@@ -190,6 +190,7 @@ line-height: 1.28;
   }
 }
 .hero__text__milk {
+  z-index: 3;
   position: absolute;
   margin-bottom: 7px;
   @media screen and (min-width: 768px) {
@@ -214,6 +215,7 @@ line-height: 1.28;
   display: flex;
   align-items: center;
 
+justify-content: center;
   border-radius: 50%;
   border: none;
   position: absolute;
@@ -377,16 +379,16 @@ line-height: 1.28;
   display: block;
   @media screen and (max-width: 767px) {
     width: 171px;
-    // transform: translate(55%, 6.4%);
+    transform: translate(56%, 6.3%);
     height: 410px;
-    bottom: 0;
-    right: 32px;
+    // bottom: 0;
+    // right: 32px;
   }
   @media screen and (min-width: 768px) {
     width: 143px;
     height: 336px;
     bottom: 0;
-    right: 271px;
+    right: 303px;
   }
   @media screen and (min-width: 1200px) {
     bottom: 0;
@@ -401,19 +403,19 @@ line-height: 1.28;
 .hero__ellipse {
   //  z-index: 1;
   @media screen and (max-width: 767px) {
-    // transform: translate(4%, 7%);
+    transform: translate(4%, 5%);
     width: 346px;
     height: 344px;
-    bottom: 75px;
+    // bottom: 75px;
     // left: 36px;
-    right: -62px;
+    // right: -62px;
   }
   @media screen and (min-width: 768px) {
     // transform: translate(4%, 7%);
     width: 335px;
     height: 333px;
     bottom: 40px;
-    right: 153px;
+    right: 185px;
   }
   @media screen and (min-width: 1200px) {
     // transform: translate(4%, 7%);
@@ -433,3 +435,45 @@ line-height: 1.28;
 
   background-size: contain;
 }
+
+
+
+
+
+
+
+
+
+.arrow-scroll{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#myBtn {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9;
+  // font-size: 8px;
+  border: none;
+  outline: none;
+  fill: $primary-accent-text-color;
+  background-color: transparent;
+  // color: white;
+  cursor: pointer;
+  padding: 5px;
+  // border-radius: 20px;
+  transform: rotate(-90deg);
+}
+
+#myBtn:hover {
+  cursor: pointer;
+  fill: #ff3769;
+}
+
