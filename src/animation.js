@@ -13,28 +13,17 @@ anime({
   direction: 'alternate',
 });
 
-let boxElement;
-
 window.addEventListener(
   'load',
   () => {
-    boxElement = document.querySelector('.advantages__item');
-
     createObserver();
   },
   false
 );
 
 function createObserver() {
-  let observer;
-
-  let options = {
-    root: null,
-    rootMargin: '0px',
-  };
-
-  observer = new IntersectionObserver(handleIntersect, options);
-  observer.observe(boxElement);
+  const observer = new IntersectionObserver(handleIntersect);
+  observer.observe(document.querySelector('.advantages__item'));
 }
 
 function handleIntersect() {
@@ -42,20 +31,22 @@ function handleIntersect() {
     targets: '.advantages__count--first-icon',
     innerText: [0, 721],
     round: 1,
-    easing: 'easeInOutExpo',
+    easing: 'easeOutExpo',
+    duration: 1500,
   });
 
   anime({
     targets: '.advantages__count--second-icon',
     innerText: [0, 16],
     round: 1,
-    easing: 'easeInOutExpo',
+    easing: 'easeOutExpo',
+    duration: 1500,
     update: function () {
       const htmlKG = document.querySelector('.advantages__count--second-icon');
       if (window.matchMedia('(max-width: 767px)').matches) {
         htmlKG.insertAdjacentHTML('beforeend', 'KG');
       } else {
-       htmlKG.insertAdjacentHTML('beforeend', 'kg');
+        htmlKG.insertAdjacentHTML('beforeend', 'kg');
       }
     },
   });
@@ -64,6 +55,7 @@ function handleIntersect() {
     targets: '.advantages__count--third-icon',
     innerText: [0, 84],
     round: 1,
-    easing: 'easeInOutExpo',
+    easing: 'easeOutExpo',
+    duration: 1500,
   });
 }
