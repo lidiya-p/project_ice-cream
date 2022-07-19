@@ -9,8 +9,9 @@
 
 .about__background-desktop {
     @media screen and (max-width: 1199px) {
-      display: none;
+        display: none;
     }
+
     position: absolute;
     top: 0;
     left: 0;
@@ -20,22 +21,23 @@
     transform: translateY(236px);
     z-index: 1;
     background-image: url(../images/desktop/about-bg-img--1x.png);
-    
+
     @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
         background-image: url(../images/desktop/about-bg-img--2x.png);
-        }
-    
+    }
+
     @media screen and (min-device-pixel-ratio: 3),
-        screen and (min-resolution: 288dpi),
-        screen and (min-resolution: 3dppx) {
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
         background-image: url(../images/desktop/about-bg-img--3x.png);
-        }
-    
+    }
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     @media screen and (min-width: 1600px) {
         transform: translateY(236px) translateX(calc((100vw - 1600px) / 2));
     }
@@ -70,9 +72,10 @@
     screen and (min-resolution: 3dppx) {
         background-image: url(../images/mobile/about-bg-3x.png);
     }
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .about__label {
@@ -89,6 +92,7 @@
         font-size: 26px;
         margin-bottom: 16px;
     }
+
     @media screen and (min-width: 1200px) {
         font-size: 30px;
         line-height: 1.1;
@@ -111,6 +115,7 @@
         font-size: 48px;
         margin-bottom: 40px;
     }
+
     @media screen and (min-width: 1200px) {
         font-size: 58px;
         letter-spacing: 0.06em;
@@ -139,6 +144,7 @@
     @media screen and (max-width: 767px) {
         margin-bottom: 40px;
     }
+
     @media screen and (min-width: 1200px) {
         width: 501px;
     }
@@ -148,6 +154,7 @@
     @media screen and (max-width: 767px) {
         padding-right: 60px;
     }
+
     @media screen and (min-width: 1200px) {
         margin-top: 90px;
         margin-left: 99px;
@@ -174,6 +181,7 @@
         font-size: 14px;
         line-height: 176%;
     }
+
     @media screen and (min-width: 1200px) {
         line-height: 194%;
         letter-spacing: 0.04em;
@@ -183,6 +191,7 @@
 .about__text--first {
     color: $title-text-color;
     margin-bottom: 22px;
+
     @media screen and (min-width: 1200px) {
         font-size: 16px;
         line-height: 176%;
