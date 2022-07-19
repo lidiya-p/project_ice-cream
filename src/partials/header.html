@@ -6,7 +6,7 @@
       </svg>
     </a>
     <div class="menu-container" id="menu-container" data-menu>
-      <div class="menu">
+      <div class="menu ">
         <button
           type="button"
           class="menu__close-button"
@@ -23,7 +23,7 @@
             <use href="./images/svg/icommon.svg#icon-close-button"></use>
           </svg>
         </button>
-        <button type="button" modal-data-open   class="modal-button modal-button--hidden">
+        <button type="button" data-modal-open   class="modal-button modal-button--hidden">
           Buy now
           <svg class="button-icon" width="4" height="8">
             <use href="./images/svg/icommon.svg#icon-button-icon"></use>
@@ -72,12 +72,13 @@
         </svg>
       </button>
 
-      <button type="button" class="modal-button header__modal-button" data-modal-open>
-        Buy now
-        <svg class="button-icon" width="4" height="8">
-          <use href="./images/svg/icommon.svg#icon-button-icon"></use>
-        </svg>
-      </button>
+
+       <button type="button" modal-data-open   data-menu-close class="modal-button">
+          Buy now
+          <svg class="button-icon" width="4" height="8">
+            <use href="./images/svg/icommon.svg#icon-button-icon"></use>
+          </svg>
+        </button>
     </div>
   </div>
 </header>

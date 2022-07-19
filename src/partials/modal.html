@@ -1,6 +1,6 @@
-<div data-modal modal-data class="beckdrop beckdrop__is-hidden is-hidden"  >
+<div modal-data class="beckdrop  is-hidden">
       <div   class="modal">
-        <button data-modal-close modal-data-close type="button" class="modal__close" >
+        <button modal-data-close type="button" class="modal__close" >
           <svg class="modal__icon-close" width="30" height="30">
             <use href="./images/svg/icommon.svg#icon-close"></use>
           </svg>
@@ -65,6 +65,79 @@
         </form>
       </div>
     </div>
-    <script src="./js/madalka.js"></script>
+
+
+
+
+    <div data-modal class="beckdrop  beckdrop__is-hidden">
+      <div   class="modal">
+
+        <button modal-close type="button" class="modal__close" >
+
+          <svg class="modal__icon-close" width="30" height="30">
+            <use href="./images/svg/icommon.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <p class="modal__title">Leave your details and we will call you back</p>
+        <form class="modal__form">
+          <label class="modal__field">
+            <span class="modal__label">Name</span>
+
+            <input class="modal__input" type="text" name="name" required />
+            <svg class="modal__icon" width="12" height="12">
+              <use href="./images/svg/icommon.svg#icon-pers"></use>
+            </svg>
+          </label>
+
+          <label class="modal__field">
+            <span class="modal__label">Phone</span>
+
+            <input class="modal__input" type="tel" name="tel" required />
+            <svg class="modal__icon" width="13" height="13">
+              <use href="./images/svg/icommon.svg#icon-telb"></use>
+            </svg>
+          </label>
+
+          <label class="modal__field">
+            <span class="modal__label">Mail</span>
+
+            <input class="modal__input" type="email" name="email" required />
+            <svg class="modal__icon" width="15" height="12">
+              <use href="./images/svg/icommon.svg#icon-msgb"></use>
+            </svg>
+          </label>
+
+          <label class="modal__textarea">
+            <span class="modal__label">Commentary</span>
+            <textarea
+              class="modal__placeholder"
+              name="comment"
+              cols="30"
+              rows="10"
+              placeholder="Enter the text"
+            ></textarea>
+          </label>
+
+          <label class="modal__checkbox">
+            <input
+              class="modal__check modal__none-check"
+              type="checkbox"
+              name="agreement"
+              value="agreement"
+            />
+            <span class="modal__checkbox-icon"></span>
+            <span class="modal__checkbox-text">
+              I agree with the newsletter and accept it
+              <a class="modal__checkbox-link" href="">Terms of the contract</a>
+            </span>
+          </label>
+          <button class="hero__primary-button modal-button" type="submit">
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/madalka.js"></script>
     
