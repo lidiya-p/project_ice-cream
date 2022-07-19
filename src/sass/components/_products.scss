@@ -112,8 +112,15 @@ display: flex;
 justify-content: center;
 padding-top: 150px;
 
-}
+@media screen and (min-width:768px) {
+        flex-basis: calc((100% - 16px) / 3);
+    }
 
+    @media screen and (min-width:1200px) {
+        flex-basis: calc((100% - 32px) / 3);
+    }
+
+}
 
 
 .products__photo {
@@ -176,7 +183,8 @@ background-color: #C2E297;
     margin-left: 120px;
     border-radius: 50%;
     border: none;
-    &:hover,
+    
+&:hover,
 &:focus{
  background-color: #E18298;
 }
