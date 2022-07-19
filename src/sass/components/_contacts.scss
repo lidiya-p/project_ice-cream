@@ -12,25 +12,26 @@
   background-position: center;
 
   @media screen and (max-width: 767px) {
-    background: linear-gradient(to top, $secondary-background-color 79%, $primary-background-color 21%);
+    background: linear-gradient(to top, $secondary-background-color 77%, $primary-background-color 77%, $primary-background-color 100%);
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
 
     padding: 80px 0 40px 0;
-          
+
     background: linear-gradient(to top,
-    $secondary-background-color 55%,
-    $primary-background-color 45%);
+        $secondary-background-color 52%,
+        $primary-background-color 52%,
+        $primary-background-color 100%);
   }
 
-    @media screen and (min-width: 1200px) {
-      background: linear-gradient(to top,
-          $secondary-background-color 78%,
-          $primary-background-color 22%);
-  
-    }
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient(to top,
+        $secondary-background-color 80%,
+        $primary-background-color 80%,
+        $primary-background-color 100%);
 
+  }
 }
 
 .contacts__item-title {
