@@ -8,6 +8,14 @@
 }
 .section-slider {
   padding-top: 0;
+
+  @media screen and(min-width: 768px) {
+    padding-bottom: 0;
+  }
+
+  @media screen and(min-width: 1200px) {
+    padding-bottom: 120px;
+  }
 }
 .swiper-slide {
   display: flex;
@@ -106,7 +114,6 @@
   width: 12px;
   height: 12px;
   color: #d9d9d9;
-  
 }
 
 .swiper-pagination-bullet-active {
@@ -115,7 +122,6 @@
   background-size: contain;
   background-color: transparent;
   transform: scale(1.2);
-   
 }
 
 .slider-location {
@@ -145,7 +151,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
   }
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 16px;
   }
 }
