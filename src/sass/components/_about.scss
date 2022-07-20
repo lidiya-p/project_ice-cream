@@ -218,6 +218,8 @@
 }
 
 .about__button {
+    position: relative;
+    z-index: 3;
     color: $primary-accent-text-color;
     background-color: $primary-background-color;
     cursor: pointer;
@@ -291,6 +293,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     z-index: 4;
+    pointer-events: none;
     @media screen and (min-width: 768px) {
     top: 60px;
     left: 60px;
